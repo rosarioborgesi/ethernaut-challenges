@@ -6,7 +6,15 @@ https://ethernaut.openzeppelin.com/
 
 ---
 
-# Repository Structure
+## My Wallet Address
+
+```
+0xeCF94300dD67bB8c31F41BE3a2136D3f0abFb0B0
+```
+
+---
+
+## Repository Structure
 
 Each challenge has its own folder containing a detailed write-up.
 
@@ -39,7 +47,7 @@ Each README is written as a **mini technical write-up**, similar to how security
 
 ---
 
-# Environment Setup
+## Environment Setup
 
 The Sepolia RPC URL is stored in an `.env` file:
 
@@ -64,7 +72,7 @@ to interact with the Ethernaut contracts on Sepolia.
 
 ---
 
-# Ethernaut Contract
+## Ethernaut Contract
 
 Main Ethernaut contract:
 
@@ -75,31 +83,6 @@ Main Ethernaut contract:
 Etherscan:
 
 https://sepolia.etherscan.io/address/0xa3e7317E591D5A0F1c605be1b3aC4D2ae56104d6
-
----
-
-# My Wallet Address
-
-```
-0xeCF94300dD67bB8c31F41BE3a2136D3f0abFb0B0
-```
-
-Transactions executed to solve the challenges can be inspected on Sepolia Etherscan.
-
----
-
-# Purpose of this Repository
-
-The goal of this repository is to document my learning journey in **smart contract development and security**.
-
-By solving Ethernaut levels and documenting the reasoning behind each solution, I aim to build a deeper understanding of:
-
-- Solidity design patterns
-- common smart contract vulnerabilities
-- secure smart contract development practices
-- low-level interaction with Ethereum contracts
-
-Each challenge demonstrates a specific concept that frequently appears in real-world smart contracts.
 
 ---
 
