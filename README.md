@@ -4,6 +4,8 @@ This repository contains my solutions to the **OpenZeppelin Ethernaut challenges
 
 https://ethernaut.openzeppelin.com/
 
+I have used the chain Ethereum Sepolia.
+
 ---
 
 ## My Wallet Address
