@@ -4,19 +4,6 @@ This repository contains my solutions to the **OpenZeppelin Ethernaut challenges
 
 https://ethernaut.openzeppelin.com/
 
-Ethernaut is a Web3/Solidity security wargame where each level demonstrates a common smart contract concept or vulnerability.  
-The goal is to analyze the contract, understand the underlying logic, and interact with it onchain to solve the challenge.
-
-Through these exercises I practice:
-
-- reading and understanding Solidity contracts
-- reasoning about smart contract behavior
-- identifying common security issues
-- interacting with contracts using Foundry tools
-- documenting the thought process used to solve each challenge
-
-Each challenge is solved on **Sepolia testnet**.
-
 ---
 
 # Repository Structure
@@ -29,7 +16,6 @@ The write-up explains:
 - relevant parts of the contract
 - the reasoning used to identify the solution
 - the commands used to interact with the contract
-- the transaction used to complete the level
 
 Example structure:
 
