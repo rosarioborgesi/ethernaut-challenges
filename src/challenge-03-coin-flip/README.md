@@ -4,6 +4,12 @@ This challenge demonstrates why `blockhash(block.number - 1)` is not a secure so
 
 The goal is to correctly predict the result of the coin flip **10 times in a row**.
 
+Instance address:
+
+```
+0x1a5484deA83d16f70AF980D04B40CC6568676aE7
+```
+
 ---
 
 ## 🎯 Goal
@@ -181,12 +187,6 @@ This confirmed that the exploit worked locally.
 ---
 
 ## 🚀 Step 3 — Execute the exploit on Sepolia
-
-Instance address:
-
-```
-0x1a5484deA83d16f70AF980D04B40CC6568676aE7
-```
 
 First, load the Sepolia RPC URL:
 

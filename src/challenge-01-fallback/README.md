@@ -1,5 +1,10 @@
 # Ethernaut Challenge 01 — Fallback
 
+Instance address:
+
+```
+0x7362C5A8A4449Fedd2103ca8CFa641CBf061a23E
+```
 
 ## 🎯 Goal
 
@@ -63,12 +68,6 @@ Once I become the owner, I can call `withdraw()` and drain the contract.
 ---
 
 ## 🧪 Step 1 — Inspect the contract onchain
-
-Instance address:
-
-```
-0x7362C5A8A4449Fedd2103ca8CFa641CBf061a23E
-```
 
 First, I loaded the Sepolia RPC URL:
 

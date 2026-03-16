@@ -3,6 +3,12 @@
 This is the introductory Ethernaut challenge.  
 The objective is to understand how to read a smart contract and interact with it onchain.
 
+Contract instance:
+
+```
+0x42d884C1247939966a96A082155320f752CB6fd0
+```
+
 ---
 
 ## 🎯 Goal
@@ -67,16 +73,6 @@ Since blockchain data is public, we can simply **read it directly**.
 ---
 
 ## 🧪 Step 2 — Read the password from the contract
-
-Contract instance:
-
-```
-0x42d884C1247939966a96A082155320f752CB6fd0
-```
-
-Etherscan:
-
-https://sepolia.etherscan.io/address/0x42d884C1247939966a96A082155320f752CB6fd0
 
 Using Foundry, first load the environment variables:
 

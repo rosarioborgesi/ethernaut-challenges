@@ -4,6 +4,8 @@ This repository contains my solutions to the **OpenZeppelin Ethernaut challenges
 
 https://ethernaut.openzeppelin.com/
 
+Ethernaut is a series of wargame-style challenges designed to teach common smart contract vulnerabilities and security concepts.
+
 I have used the chain Ethereum Sepolia.
 
 ---
@@ -13,6 +15,27 @@ I have used the chain Ethereum Sepolia.
 ```
 0xeCF94300dD67bB8c31F41BE3a2136D3f0abFb0B0
 ```
+
+## Ethernaut Contract
+
+Main Ethernaut contract:
+
+```
+0xa3e7317E591D5A0F1c605be1b3aC4D2ae56104d6
+```
+
+
+---
+
+## Instance Contracts
+
+| Challenge        | Instance Address |
+|------------------|------------------|
+| Hello Ethernaut  | 0x42d884C1247939966a96A082155320f752CB6fd0 |
+| Fallback         | 0x7362C5A8A4449Fedd2103ca8CFa641CBf061a23E |
+| Fallout          | 0xE53a2EBA4218FAE1f4DB2c3abE62A7daB4E28dA7 |
+| Coin Flip        | 0x1a5484deA83d16f70AF980D04B40CC6568676aE7 |
+| Telephone        | 0x4b0e263C8E936DEf791EbAf420EaeF8F8c0A574B |
 
 ---
 
@@ -49,44 +72,8 @@ Each README is written as a **mini technical write-up**, similar to how security
 
 ---
 
-## Environment Setup
 
-The Sepolia RPC URL is stored in an `.env` file:
 
-```
-SEPOLIA_RPC_URL=<your_rpc_url>
-```
-
-Environment variables can be loaded with:
-
-```
-source .env
-```
-
-This allows Foundry commands such as:
-
-```
-cast call
-cast send
-```
-
-to interact with the Ethernaut contracts on Sepolia.
-
----
-
-## Ethernaut Contract
-
-Main Ethernaut contract:
-
-```
-0xa3e7317E591D5A0F1c605be1b3aC4D2ae56104d6
-```
-
-Etherscan:
-
-https://sepolia.etherscan.io/address/0xa3e7317E591D5A0F1c605be1b3aC4D2ae56104d6
-
----
 
 # Author
 

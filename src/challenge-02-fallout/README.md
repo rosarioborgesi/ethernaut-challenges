@@ -2,6 +2,12 @@
 
 This challenge demonstrates a historical Solidity vulnerability related to incorrectly defined constructors.
 
+Instance address:
+
+```
+0xE53a2EBA4218FAE1f4DB2c3abE62A7daB4E28dA7
+```
+
 ---
 
 ## 🎯 Goal
@@ -61,12 +67,6 @@ This means **anyone can call `Fal1out()` and become the owner**.
 ---
 
 ## 🧪 Step 1 — Inspect the contract onchain
-
-Instance address:
-
-```
-0xE53a2EBA4218FAE1f4DB2c3abE62A7daB4E28dA7
-```
 
 First, load the RPC URL:
 
