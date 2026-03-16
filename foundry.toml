@@ -7,5 +7,6 @@ libs = ["lib"]
 
 [lint]
 exclude_lints = [
-  "unwrapped-modifier-logic"
+  "unwrapped-modifier-logic",
+  "mixed-case-variable"
 ]
