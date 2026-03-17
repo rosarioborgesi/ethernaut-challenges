@@ -8,37 +8,6 @@ Ethernaut is a series of wargame-style challenges designed to teach common smart
 
 I have used the chain Ethereum Sepolia.
 
----
-
-## My Wallet Address
-
-```
-0xeCF94300dD67bB8c31F41BE3a2136D3f0abFb0B0
-```
-
-## Ethernaut Contract
-
-Main Ethernaut contract:
-
-```
-0xa3e7317E591D5A0F1c605be1b3aC4D2ae56104d6
-```
-
-
----
-
-## Instance Contracts
-
-| Challenge        | Instance Address |
-|------------------|------------------|
-| Hello Ethernaut  | 0x42d884C1247939966a96A082155320f752CB6fd0 |
-| Fallback         | 0x7362C5A8A4449Fedd2103ca8CFa641CBf061a23E |
-| Fallout          | 0xE53a2EBA4218FAE1f4DB2c3abE62A7daB4E28dA7 |
-| Coin Flip        | 0x1a5484deA83d16f70AF980D04B40CC6568676aE7 |
-| Telephone        | 0x4b0e263C8E936DEf791EbAf420EaeF8F8c0A574B |
-
----
-
 ## Repository Structure
 
 Each challenge has its own folder containing a detailed write-up.
@@ -67,13 +36,40 @@ ethernaut-solutions
 └── ...
 ```
 
-Each README is written as a **mini technical write-up**, similar to how security researchers document vulnerabilities.
+---
 
+## My Wallet Address
+
+```
+0xeCF94300dD67bB8c31F41BE3a2136D3f0abFb0B0
+```
+
+## Ethernaut Contract
+
+Main Ethernaut contract:
+
+```
+0xa3e7317E591D5A0F1c605be1b3aC4D2ae56104d6
+```
 
 ---
 
+## Instance Contracts
 
+| Challenge        | Instance Address |
+|------------------|------------------|
+| Hello Ethernaut  | 0x42d884C1247939966a96A082155320f752CB6fd0 |
+| Fallback         | 0x7362C5A8A4449Fedd2103ca8CFa641CBf061a23E |
+| Fallout          | 0xE53a2EBA4218FAE1f4DB2c3abE62A7daB4E28dA7 |
+| Coin Flip        | 0x1a5484deA83d16f70AF980D04B40CC6568676aE7 |
+| Telephone        | 0x4b0e263C8E936DEf791EbAf420EaeF8F8c0A574B |
+| Token            | 0xB4ceb3270C4cE2De83DA503235ad214FD4D75357 |
 
+---
+
+## Link to my Ethernaut Challenge page
+
+https://ethernaut.openzeppelin.com/level/0x3c34A342b2aF5e885FcaA3800dB5B205fEfa3ffB
 
 # Author
 
