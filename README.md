@@ -6,7 +6,16 @@ https://ethernaut.openzeppelin.com/
 
 Ethernaut is a series of wargame-style challenges designed to teach common smart contract vulnerabilities and security concepts.
 
-I have used the chain Ethereum Sepolia.
+This repository documents my approach to each challenge, including:
+- vulnerability analysis
+- exploitation strategy
+- reproducible steps using Foundry
+
+
+## Setup
+
+- Tooling: Foundry
+- Network: Ethereum Sepolia
 
 ## Repository Structure
 
@@ -64,6 +73,7 @@ Main Ethernaut contract:
 | Coin Flip        | 0x1a5484deA83d16f70AF980D04B40CC6568676aE7 |
 | Telephone        | 0x4b0e263C8E936DEf791EbAf420EaeF8F8c0A574B |
 | Token            | 0xB4ceb3270C4cE2De83DA503235ad214FD4D75357 |
+| Delegation       | 0x9294C53875B19eD1F91ecac4AE16b5895046cF1c |
 
 ---
 
