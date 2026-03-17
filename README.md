@@ -74,7 +74,7 @@ Main Ethernaut contract:
 | Telephone        | 0x4b0e263C8E936DEf791EbAf420EaeF8F8c0A574B |
 | Token            | 0xB4ceb3270C4cE2De83DA503235ad214FD4D75357 |
 | Delegation       | 0x9294C53875B19eD1F91ecac4AE16b5895046cF1c |
-
+| Force            | 0x3Aa4E20aED5d03E82E58b68b89fF73F86d60016b |           
 ---
 
 ## Link to my Ethernaut Challenge page
