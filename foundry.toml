@@ -8,5 +8,6 @@ libs = ["lib"]
 [lint]
 exclude_lints = [
   "unwrapped-modifier-logic",
-  "mixed-case-variable"
+  "mixed-case-variable",
+  "screaming-snake-case-immutable"
 ]

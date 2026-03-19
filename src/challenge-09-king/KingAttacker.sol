@@ -17,15 +17,14 @@ contract KingAttacker {
     function changeKing() external payable {
         uint256 prize = i_king.prize();
 
-        if(msg.value < prize) {
+        if (msg.value < prize) {
             revert KingAttacker__InvalidPrize();
         }
-        
+
         (bool success,) = address(i_king).call{value: msg.value}("");
-        if(!success) {
+        if (!success) {
             revert KingAttacker__EthTransferFailed();
         }
-
     }
 
     receive() external payable {

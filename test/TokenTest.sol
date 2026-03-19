@@ -10,7 +10,7 @@ contract Attacker {
     }
 }
 
-contract TokenTest is DSTest { 
+contract TokenTest is DSTest {
     address receiver = address(0x100);
     Attacker attacker;
     Token token;
@@ -41,7 +41,7 @@ contract TokenTest is DSTest {
     }
 }
 
-/* 
+/*
     Initial state
         balances[attacker] = 20
         balances[receiver] = 0
