@@ -79,6 +79,7 @@ Main Ethernaut contract:
 | King             | 0x6A2CA55902D70aA546C04b8bfE0ac3212f95D64a |
 | Re-entrancy      | 0x4F688a59A5Ca69dD306D7445b619316545DA7d79 |
 | Elevator         | 0xFee3bd70D1313ef9ea54EDdfC9cbDcA3ce5cf003 |
+| Privacy          | 0x7fFBF1444f2D487FF9b3240a774700352aA772e8 |
 ---
 
 ## Link to my Ethernaut Challenge Page
