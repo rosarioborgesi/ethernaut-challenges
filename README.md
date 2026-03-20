@@ -78,6 +78,7 @@ Main Ethernaut contract:
 | Vault            | 0xe018a3454E7572ea50018f9F4813335987e231FA |
 | King             | 0x6A2CA55902D70aA546C04b8bfE0ac3212f95D64a |
 | Re-entrancy      | 0x4F688a59A5Ca69dD306D7445b619316545DA7d79 |
+| Elevator         | 0xFee3bd70D1313ef9ea54EDdfC9cbDcA3ce5cf003 |
 ---
 
 ## Link to my Ethernaut Challenge Page
