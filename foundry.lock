@@ -1,8 +1,17 @@
 {
+  "lib/ds-test": {
+    "rev": "e282159d5170298eb2455a6c05280ab5a73a4ef0"
+  },
   "lib/forge-std": {
     "tag": {
       "name": "v1.15.0",
       "rev": "0844d7e1fc5e60d77b68e469bff60265f236c398"
+    }
+  },
+  "lib/openzeppelin-contracts": {
+    "tag": {
+      "name": "v4.8.3",
+      "rev": "0a25c1940ca220686588c4af3ec526f725fe2582"
     }
   }
 }

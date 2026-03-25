@@ -82,6 +82,7 @@ Main Ethernaut contract:
 | Privacy          | 0x7fFBF1444f2D487FF9b3240a774700352aA772e8 |
 | Gatekeeper One   | 0x2A8613f30D946baf392870bC93a0570808bA25a3 |
 | Gatekeeper Two   | 0x2AE2F44a2896f194bCe2c5a0A1883e53C1F9FB6e |
+| Naught Coin      | 0xde793CbdCc4B70eE335b29638e066A4705a565df |
 ---
 
 ## Link to my Ethernaut Challenge Page
