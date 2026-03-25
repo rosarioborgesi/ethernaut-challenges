@@ -87,9 +87,12 @@ then its `setTime()` function can overwrite slot `2`, which corresponds to `owne
 ---
 
 ## 🧪 Attacker contract
+I have written the test `PreservationTest.t.sol` to test the exploit locally using the `PreservationAttacker`.
 
 👉 Implementation: [PreservationAttacker.sol](PreservationAttacker.sol)
+
 👉 Test: [PreservationTest.t.sol](../../test/PreservationTest.t.sol)
+
 
 ```solidity
 // SPDX-License-Identifier: MIT

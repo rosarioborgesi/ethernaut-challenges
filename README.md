@@ -84,6 +84,7 @@ Main Ethernaut contract:
 | Gatekeeper Two   | 0x2AE2F44a2896f194bCe2c5a0A1883e53C1F9FB6e |
 | Naught Coin      | 0xde793CbdCc4B70eE335b29638e066A4705a565df |
 | Preservation     | 0x97e653C5A8CDF2ED240724974F6462199a87AB0B |
+| Recovery         | 0x748eB39299eB709498ebB87a996bd9432F2E2D11 |
 ---
 
 ## Link to my Ethernaut Challenge Page
