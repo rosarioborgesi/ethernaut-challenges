@@ -65,26 +65,27 @@ Main Ethernaut contract:
 
 ## Instance Contracts
 
-| Challenge        | Instance Address |
-|------------------|------------------|
-| Hello Ethernaut  | 0x42d884C1247939966a96A082155320f752CB6fd0 |
-| Fallback         | 0x7362C5A8A4449Fedd2103ca8CFa641CBf061a23E |
-| Fallout          | 0xE53a2EBA4218FAE1f4DB2c3abE62A7daB4E28dA7 |
-| Coin Flip        | 0x1a5484deA83d16f70AF980D04B40CC6568676aE7 |
-| Telephone        | 0x4b0e263C8E936DEf791EbAf420EaeF8F8c0A574B |
-| Token            | 0xB4ceb3270C4cE2De83DA503235ad214FD4D75357 |
-| Delegation       | 0x9294C53875B19eD1F91ecac4AE16b5895046cF1c |
-| Force            | 0x3Aa4E20aED5d03E82E58b68b89fF73F86d60016b |
-| Vault            | 0xe018a3454E7572ea50018f9F4813335987e231FA |
-| King             | 0x6A2CA55902D70aA546C04b8bfE0ac3212f95D64a |
-| Re-entrancy      | 0x4F688a59A5Ca69dD306D7445b619316545DA7d79 |
-| Elevator         | 0xFee3bd70D1313ef9ea54EDdfC9cbDcA3ce5cf003 |
-| Privacy          | 0x7fFBF1444f2D487FF9b3240a774700352aA772e8 |
-| Gatekeeper One   | 0x2A8613f30D946baf392870bC93a0570808bA25a3 |
-| Gatekeeper Two   | 0x2AE2F44a2896f194bCe2c5a0A1883e53C1F9FB6e |
-| Naught Coin      | 0xde793CbdCc4B70eE335b29638e066A4705a565df |
-| Preservation     | 0x97e653C5A8CDF2ED240724974F6462199a87AB0B |
-| Recovery         | 0x748eB39299eB709498ebB87a996bd9432F2E2D11 |
+| Number | Challenge        | Instance Address                           |
+|--------|------------------|--------------------------------------------|
+| 00     | Hello Ethernaut  | 0x42d884C1247939966a96A082155320f752CB6fd0 |
+| 01     | Fallback         | 0x7362C5A8A4449Fedd2103ca8CFa641CBf061a23E |
+| 02     | Fallout          | 0xE53a2EBA4218FAE1f4DB2c3abE62A7daB4E28dA7 |
+| 03     | Coin Flip        | 0x1a5484deA83d16f70AF980D04B40CC6568676aE7 |
+| 04     | Telephone        | 0x4b0e263C8E936DEf791EbAf420EaeF8F8c0A574B |
+| 05     | Token            | 0xB4ceb3270C4cE2De83DA503235ad214FD4D75357 |
+| 06     | Delegation       | 0x9294C53875B19eD1F91ecac4AE16b5895046cF1c |
+| 07     | Force            | 0x3Aa4E20aED5d03E82E58b68b89fF73F86d60016b |
+| 08     | Vault            | 0xe018a3454E7572ea50018f9F4813335987e231FA |
+| 09     | King             | 0x6A2CA55902D70aA546C04b8bfE0ac3212f95D64a |
+| 10     | Re-entrancy      | 0x4F688a59A5Ca69dD306D7445b619316545DA7d79 |
+| 11     | Elevator         | 0xFee3bd70D1313ef9ea54EDdfC9cbDcA3ce5cf003 |
+| 12     | Privacy          | 0x7fFBF1444f2D487FF9b3240a774700352aA772e8 |
+| 13     | Gatekeeper One   | 0x2A8613f30D946baf392870bC93a0570808bA25a3 |
+| 14     | Gatekeeper Two   | 0x2AE2F44a2896f194bCe2c5a0A1883e53C1F9FB6e |
+| 15     | Naught Coin      | 0xde793CbdCc4B70eE335b29638e066A4705a565df |
+| 16     | Preservation     | 0x97e653C5A8CDF2ED240724974F6462199a87AB0B |
+| 17     | Recovery         | 0x748eB39299eB709498ebB87a996bd9432F2E2D11 |
+| 18     | Magic Number     | 0x804197e08B99b7953cC146DAdED199a7210F491b |
 ---
 
 ## Link to my Ethernaut Challenge Page
