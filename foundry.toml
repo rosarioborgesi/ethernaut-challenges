@@ -11,7 +11,10 @@ exclude_lints = [
   "mixed-case-variable",
   "screaming-snake-case-immutable",
   "unaliased-plain-import",
-  "unused-import"
+  "unused-import",
+  "screaming-snake-case-const",
+  "unchecked-call",
+  "erc20-unchecked-transfer"
 ]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

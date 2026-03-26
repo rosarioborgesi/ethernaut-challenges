@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import "../utils/SafeMath.sol";
+import "../helpers/SafeMath.sol";
 
 contract Reentrance {
     using SafeMath for uint256;
