@@ -13,8 +13,8 @@ contract DenialTest is Test {
     function setUp() public {
         denial = new Denial();
         attacker = new DenialAttacker(payable(address(denial)));
-        (bool success, ) = address(denial).call{value: 0.001 ether}("");
-        if(!success) {
+        (bool success,) = address(denial).call{value: 0.001 ether}("");
+        if (!success) {
             revert("Failed to found denial contract");
         }
         owner = denial.owner();
@@ -22,12 +22,10 @@ contract DenialTest is Test {
 
     function testAttack() public {
         attacker.setPartner();
-        
+
         // We set a fixed amount of gas because Foundry uses a lot of gas and it's not very realistic
         // Should revert with Out of gas
-        (bool success, ) = address(denial).call{gas: 100000}(
-            abi.encodeWithSignature("withdraw()")
-        );
+        (bool success,) = address(denial).call{gas: 100000}(abi.encodeWithSignature("withdraw()"));
 
         assertFalse(success);
     }

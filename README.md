@@ -24,9 +24,8 @@ Each challenge has its own folder containing a detailed write-up.
 The write-up explains:
 
 - the goal of the challenge
-- relevant parts of the contract
 - the reasoning used to identify the solution
-- the commands used to interact with the contract
+- the code and commands used to solve the challenge
 
 Example structure:
 
@@ -88,6 +87,7 @@ Main Ethernaut contract:
 | 18     | Magic Number     | 0x804197e08B99b7953cC146DAdED199a7210F491b |
 | 19     | Alien Codex      | 0x18D6E71d6902673445DC30c1271c7e56007E9026 |
 | 20     | Denial           | 0x7605C41F2a34616F699F363DEB97adF28cAdF343 |
+| 21     | Shop             | 0xC96C9Bd099b74DB1E7b98e8d0A422D067f3ADE28 |
 ---
 
 ## Link to my Ethernaut Challenge Page
