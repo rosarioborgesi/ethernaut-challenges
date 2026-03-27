@@ -87,6 +87,7 @@ Main Ethernaut contract:
 | 17     | Recovery         | 0x748eB39299eB709498ebB87a996bd9432F2E2D11 |
 | 18     | Magic Number     | 0x804197e08B99b7953cC146DAdED199a7210F491b |
 | 19     | Alien Codex      | 0x18D6E71d6902673445DC30c1271c7e56007E9026 |
+| 20     | Denial           | 0x7605C41F2a34616F699F363DEB97adF28cAdF343 |
 ---
 
 ## Link to my Ethernaut Challenge Page
