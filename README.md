@@ -88,6 +88,7 @@ Main Ethernaut contract:
 | 19     | Alien Codex      | 0x18D6E71d6902673445DC30c1271c7e56007E9026 |
 | 20     | Denial           | 0x7605C41F2a34616F699F363DEB97adF28cAdF343 |
 | 21     | Shop             | 0xC96C9Bd099b74DB1E7b98e8d0A422D067f3ADE28 |
+| 22     | Dex              | 0x69222B1ac7950bEc5fc46cB377D7B92c2834fb7f |
 ---
 
 ## Link to my Ethernaut Challenge Page
