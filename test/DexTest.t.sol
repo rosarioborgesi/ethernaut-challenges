@@ -76,7 +76,7 @@ contract DexTest is Test {
         amountToken1In = 24;
 
         dex.approve(address(dex), amountToken1In);
-        dex.swap(address(token1), address(token2), amountToken1In); 
+        dex.swap(address(token1), address(token2), amountToken1In);
 
         assertEq(token1.balanceOf(user), 0);
         assertEq(token2.balanceOf(user), 30);

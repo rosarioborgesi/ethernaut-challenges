@@ -89,6 +89,7 @@ Main Ethernaut contract:
 | 20     | Denial           | 0x7605C41F2a34616F699F363DEB97adF28cAdF343 |
 | 21     | Shop             | 0xC96C9Bd099b74DB1E7b98e8d0A422D067f3ADE28 |
 | 22     | Dex              | 0x69222B1ac7950bEc5fc46cB377D7B92c2834fb7f |
+| 23     | Dex Two          | 0x51Bc355E1c0093b61933508246Ea4ec01a9De71F |
 ---
 
 ## Link to my Ethernaut Challenge Page
