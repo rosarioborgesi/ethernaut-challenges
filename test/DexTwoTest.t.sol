@@ -36,11 +36,11 @@ contract DexTwoTest is Test {
         myToken1 = new MyErc20();
         myToken1.mint(user, 1);
         myToken1.mint(address(dex), 1);
-        
+
         myToken2 = new MyErc20();
         myToken2.mint(user, 1);
         myToken2.mint(address(dex), 1);
-        
+
         vm.label(user, "User");
         vm.label(owner, "Owner");
         vm.label(address(dex), "DEX");
@@ -59,7 +59,6 @@ contract DexTwoTest is Test {
     }
 
     function testAttackDexTwo() public {
-        
         vm.startPrank(user);
         myToken1.approve(address(dex), 1);
         dex.swap(address(myToken1), address(token1), 1);
