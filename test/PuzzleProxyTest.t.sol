@@ -113,7 +113,7 @@ contract PuzzleProxyTest is Test {
         // so writing the player's address here overwrites the proxy admin.
         vm.prank(player);
         wallet.setMaxBalance(uint256(uint160(player)));
-        
+
         assertEq(proxy.admin(), player);
     }
 }
