@@ -92,6 +92,7 @@ Main Ethernaut contract:
 | 23     | Dex Two          | 0x51Bc355E1c0093b61933508246Ea4ec01a9De71F |
 | 24     | Puzzle Wallet    | 0x8573cA54260a177c618A3B028fD02E0D904307cB |
 | 25     | Motorbike        | 0x30649a58B74d44A3EDD7c21e29749Cf76542d078 |
+| 26     | DoubleEntryPoint | 0x2f83dCa66ffDbF6b8615FC87BdE31797e2Dd3d39 |
 ---
 
 ## Link to my Ethernaut Challenge Page
