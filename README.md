@@ -93,6 +93,7 @@ Main Ethernaut contract:
 | 24     | Puzzle Wallet    | 0x8573cA54260a177c618A3B028fD02E0D904307cB |
 | 25     | Motorbike        | 0x30649a58B74d44A3EDD7c21e29749Cf76542d078 |
 | 26     | DoubleEntryPoint | 0x2f83dCa66ffDbF6b8615FC87BdE31797e2Dd3d39 |
+| 27     | Good Samaritan   | 0x8B307734D65ceB74A52B350BC13b0cA8B7859246 |
 ---
 
 ## Link to my Ethernaut Challenge Page
