@@ -130,6 +130,7 @@ These tests:
 | 26 | DoubleEntryPoint | 0x2f83dCa66ffDbF6b8615FC87BdE31797e2Dd3d39 |
 | 27 | Good Samaritan   | 0x8B307734D65ceB74A52B350BC13b0cA8B7859246 |
 | 28 | Gatekeeper Three | 0xA39c7757e03071E95d132537dd74559E3E05b8E8 |
+| 29 | Switch           |                                            | 
 
 ---
 
