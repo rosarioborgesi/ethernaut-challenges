@@ -133,6 +133,7 @@ These tests:
 | 29 | Switch           |                                            | 
 | 30 | Higher Order     | 0x628EeF867757540991899d3155baE509313d3683 |
 | 31 | Stake            | 0x0Ae53C54BFDDA8B9c53EEd01A514c98B4a5A1de1 |
+| 32 | Impersonator     | 0x18a54Da1BFb716a01Aba43d5C00c03a02c7AF8d9 |
 
 ---
 
