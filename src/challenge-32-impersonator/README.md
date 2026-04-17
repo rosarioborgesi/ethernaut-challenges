@@ -1,7 +1,3 @@
-Here’s a **clean, recruiter-friendly version** of your README following your usual structure and improving clarity, flow, and impact 👇
-
----
-
 # Ethernaut Challenge 32 — Impersonator
 
 SlockDotIt’s new product, **ECLocker**, integrates IoT gate locks with Solidity smart contracts using **ECDSA signatures** for authorization.
@@ -190,7 +186,7 @@ Dec: 613862550332953244792286904639302985674388410964131545524158860621804813356
 Hex: 0x87b7639b5f24e93bf106794133370f950d5e9b00f5b5c8cbd866a487529b814f
 ```
 
-Result:
+So:
 
 ```bash
 S2=0x87b7639b5f24e93bf106794133370f950d5e9b00f5b5c8cbd866a487529b814f
