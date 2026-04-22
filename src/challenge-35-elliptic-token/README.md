@@ -1,0 +1,288 @@
+# Ethernaut Challenge 35 — Elliptic Token
+
+BOB created and owns a new ERC20 token with an elliptic curve–based signed voucher redemption system called `EllipticToken` (`ETK`).
+
+Bob can create vouchers off-chain that can be redeemed on-chain for tokens.  
+The contract also includes a custom permit system based on ECDSA signatures.
+
+Bob is a lazy developer and “optimized” some steps of the ECDSA algorithm.
+
+Your goal is to steal the `ETK` tokens that ALICE (`0xA11CE84AcB91Ac59B0A4E2945C9157eF3Ab17D4e`) just redeemed.
+
+---
+
+## Instance Address
+
+```text
+0x551c9cD11a73Bb4b85d4381fEac66ba2fd23596B
+````
+
+```bash
+ELLIPTIC_TOKEN=0x551c9cD11a73Bb4b85d4381fEac66ba2fd23596B
+```
+
+---
+
+# 🎯 Goal
+
+Drain Alice’s balance so that:
+
+```solidity
+balanceOf(ALICE) == 0
+```
+
+---
+
+# 🔍 Initial Analysis
+
+## Check Alice balance
+
+```bash
+ALICE_ADDRESS=0xA11CE84AcB91Ac59B0A4E2945C9157eF3Ab17D4e
+
+cast call $ELLIPTIC_TOKEN \
+    "balanceOf(address)(uint256)" \
+    $ALICE_ADDRESS \
+    --rpc-url $SEPOLIA_RPC_URL
+```
+
+Result:
+
+```text
+10000000000000000000
+```
+
+Alice owns `10 ETK`.
+
+---
+
+## Check total supply
+
+```bash
+cast call $ELLIPTIC_TOKEN \
+    "totalSupply()(uint256)" \
+    --rpc-url $SEPOLIA_RPC_URL
+```
+
+Result:
+
+```text
+10000000000000000000
+```
+
+Alice owns the full token supply.
+
+So the cleanest path is not minting more tokens, but obtaining permission to move Alice’s balance.
+
+That means the interesting function is:
+
+```solidity
+permit(...)
+```
+
+---
+
+# 🔍 Inspect permit()
+
+```solidity
+function permit(
+    uint256 amount,
+    address spender,
+    bytes memory tokenOwnerSignature,
+    bytes memory spenderSignature
+) external {
+    bytes32 permitHash = keccak256(abi.encode(amount));
+
+    require(!usedHashes[permitHash], HashAlreadyUsed());
+    require(!usedHashes[bytes32(amount)], HashAlreadyUsed());
+
+    address tokenOwner =
+        ECDSA.recover(bytes32(amount), tokenOwnerSignature);
+
+    bytes32 permitAcceptHash =
+        keccak256(
+            abi.encodePacked(
+                tokenOwner,
+                spender,
+                amount
+            )
+        );
+
+    require(
+        ECDSA.recover(
+            permitAcceptHash,
+            spenderSignature
+        ) == spender
+    );
+
+    usedHashes[permitHash] = true;
+
+    _approve(tokenOwner, spender, amount);
+}
+```
+
+---
+
+# 🚨 The Suspicious Line
+
+```solidity
+address tokenOwner =
+    ECDSA.recover(bytes32(amount), tokenOwnerSignature);
+```
+
+This is highly unusual.
+
+Normally signature verification should recover from a **real message hash**, not from:
+
+```solidity
+bytes32(amount)
+```
+
+which is only the raw 32-byte representation of a number.
+
+---
+
+# 🔍 Verify Replay Checks
+
+For `10 ether`, both replay-protection slots are unused.
+
+## keccak256(abi.encode(amount))
+
+```bash
+cast keccak $(cast abi-encode "f(uint256)" 10000000000000000000)
+```
+
+```text
+0xf32d90031fda796f2c8c61d0d96e5f36268ff2ba2d0b2382738d725572d0cf76
+```
+
+```bash
+cast call $ELLIPTIC_TOKEN \
+    "usedHashes(bytes32)(bool)" \
+    0xf32d90031fda796f2c8c61d0d96e5f36268ff2ba2d0b2382738d725572d0cf76 \
+    --rpc-url $SEPOLIA_RPC_URL
+```
+
+```text
+false
+```
+
+---
+
+## bytes32(amount)
+
+```bash
+cast abi-encode "f(uint256)" 10000000000000000000
+```
+
+```text
+0x0000000000000000000000000000000000000000000000008ac7230489e80000
+```
+
+```bash
+cast call $ELLIPTIC_TOKEN \
+    "usedHashes(bytes32)(bool)" \
+    0x0000000000000000000000000000000000000000000000008ac7230489e80000 \
+    --rpc-url $SEPOLIA_RPC_URL
+```
+
+```text
+false
+```
+
+So `permit()` can still be used.
+
+---
+
+# 🔍 How Alice Got the Tokens
+
+The mint happened during the Ethernaut setup transaction.
+
+By inspecting the [factory source](https://github.com/OpenZeppelin/ethernaut/blob/master/contracts/src/levels/EllipticTokenFactory.sol):
+
+```solidity
+instance.redeemVoucher(
+    INITIAL_AMOUNT,
+    ALICE,
+    salt,
+    bobSignature,
+    aliceSignature
+);
+```
+
+So Alice is intentionally preloaded with `10 ETK`.
+
+---
+
+# 🚨 OpenZeppelin Warning
+
+The `ECDSA.recover()` documentation explicitly says:
+
+```solidity
+IMPORTANT: `hash` must be the result of a hash operation
+for the verification to be secure:
+it is possible to craft signatures that recover
+to arbitrary addresses for non-hashed data.
+```
+
+But Bob uses:
+
+```solidity
+ECDSA.recover(bytes32(amount), ...)
+```
+
+That is exactly the unsafe pattern warned about.
+
+---
+
+# 🧪 Local Proof of Unsafe Recovery
+
+I reproduced the behavior locally in the test [EllipticTokenTest.t.sol](../../test/EllipticTokenTest.t.sol):
+
+```solidity
+function test_ecrecoverPlayground() public view {
+    bytes32 h = bytes32(uint256(10 ether));
+
+    uint8 v = 27;
+    bytes32 r = bytes32(uint256(1));
+    bytes32 s = bytes32(uint256(2));
+
+    address signer = ecrecover(h, v, r, s);
+
+    console.log("signer", signer);
+}
+```
+
+Output:
+
+```text
+signer 0x3705772bBDb18A2Cc7355F3bF9dD4d891A79eBA8
+```
+
+So even arbitrary `(v,r,s)` values can recover to a signer address.
+
+That confirms why using non-hashed data is dangerous.
+
+---
+
+# 🧠 Solution
+
+The final exploit is to choose a special `amount` together with a crafted signature such that:
+
+```solidity
+ECDSA.recover(bytes32(amount), tokenOwnerSignature) == ALICE
+```
+
+Then:
+
+1. `permit()` believes Alice approved the allowance.
+2. The attacker signs as `spender`.
+3. `_approve(ALICE, attacker, amount)` is executed.
+4. `transferFrom(ALICE, attacker, 10 ether)` drains Alice.
+
+---
+
+# 📚 Public Full Solution
+
+[https://piatoss3612.tistory.com/202](https://piatoss3612.tistory.com/202)
+

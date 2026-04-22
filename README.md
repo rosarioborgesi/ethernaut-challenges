@@ -136,6 +136,7 @@ These tests:
 | 32 | Impersonator           | 0x18a54Da1BFb716a01Aba43d5C00c03a02c7AF8d9 |
 | 33 | Magic Animal Carousel  | 0x3e52E6932aa2F68ea0BBe21D44B9DD9Cb40b4D72 |
 | 34 | Bet House              | 0xbbEA21974e1132F7Ff0C10Df5b64f1A1E327AC49 |
+| 35 | Elliptic Token         | 0x551c9cD11a73Bb4b85d4381fEac66ba2fd23596B |
 
 ---
 

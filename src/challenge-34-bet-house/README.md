@@ -297,7 +297,7 @@ So the challenge is solved by abusing the mismatch between:
 
 I first reproduced the exploit locally in the test file [`BetHouseTest.t.sol`](../../test/BetHouseTest.t.sol).
 
-The helper contract used in the exploit is:
+The helper contract used in the exploit is [`BetHouseHelper`](./BetHouseHelper.sol):
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -367,7 +367,7 @@ This proves that a second address can accumulate `20` wrapped tokens even though
 
 ### 1. Deploy the helper contract
 
-Deploy [`BetHouseHelper`](./BetHouseHelper.sol):
+Deploy the helper:
 
 ```bash
 forge create src/challenge-34-bet-house/BetHouseHelper.sol:BetHouseHelper \
