@@ -99,10 +99,6 @@ These tests:
 
 ## 🧩 Solved Challenges
 
-## 🧩 Solved Challenges
-
-## 🧩 Solved Challenges
-
 | #  | Challenge             | Completed |
 |:--:|-----------------------|:---------:|
 | 00 | Hello Ethernaut       |    ✅    |  
