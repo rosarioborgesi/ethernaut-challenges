@@ -16,9 +16,7 @@ contract AttackMagicAnimalCarouselScript is Script {
         carousel.setAnimalAndSpin("abcdefghij");
 
         // Step 2: corrupt crate 1 nextId to 0xffff = 65535
-        string memory corruptedAnimal = string(
-            abi.encodePacked(bytes12(type(uint96).max))
-        );
+        string memory corruptedAnimal = string(abi.encodePacked(bytes12(type(uint96).max)));
 
         carousel.changeAnimal(corruptedAnimal, 1);
 
