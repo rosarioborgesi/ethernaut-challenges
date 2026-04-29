@@ -28,7 +28,7 @@ contract EllipticTokenTest is Test {
         token.redeemVoucher(AMOUNT, ALICE, salt, bobSignature, aliceSignature);
     }
 
-    function test_ecrecoverPlayground() public view {
+    function test_ecrecoverPlayground() public pure {
         bytes32 h = bytes32(uint256(10 ether));
 
         uint8 v = 27;

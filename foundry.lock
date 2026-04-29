@@ -5,10 +5,22 @@
   "lib/forge-std": {
     "rev": "0844d7e1fc5e60d77b68e469bff60265f236c398"
   },
+  "lib/openzeppelin-contracts": {
+    "tag": {
+      "name": "v5.4.0",
+      "rev": "c64a1edb67b6e3f4a15cca8909c9482ad33a02b0"
+    }
+  },
   "lib/openzeppelin-contracts-06": {
     "rev": "8e0296096449d9b1cd7c5631e917330635244c37"
   },
   "lib/openzeppelin-contracts-08": {
     "rev": "ecd2ca2cd7cac116f7a37d0e474bbb3d7d5e1c4d"
+  },
+  "lib/openzeppelin-contracts-v5.4.0": {
+    "tag": {
+      "name": "v5.4.0",
+      "rev": "c64a1edb67b6e3f4a15cca8909c9482ad33a02b0"
+    }
   }
 }

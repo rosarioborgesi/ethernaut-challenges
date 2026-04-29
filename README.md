@@ -99,44 +99,45 @@ These tests:
 
 ## 🧩 Solved Challenges
 
-| #  | Challenge             | Completed |
-|:--:|-----------------------|:---------:|
-| 00 | Hello Ethernaut       |    ✅    |  
-| 01 | Fallback              |    ✅    |
-| 02 | Fallout               |    ✅    |
-| 03 | Coin Flip             |    ✅    |
-| 04 | Telephone             |    ✅    |
-| 05 | Token                 |    ✅    |
-| 06 | Delegation            |    ✅    |
-| 07 | Force                 |    ✅    |
-| 08 | Vault                 |    ✅    |
-| 09 | King                  |    ✅    |
-| 10 | Re-entrancy           |    ✅    |
-| 11 | Elevator              |    ✅    |
-| 12 | Privacy               |    ✅    |
-| 13 | Gatekeeper One        |    ✅    |
-| 14 | Gatekeeper Two        |    ✅    |
-| 15 | Naught Coin           |    ✅    |
-| 16 | Preservation          |    ✅    |
-| 17 | Recovery              |    ✅    |
-| 18 | Magic Number          |    ✅    |
-| 19 | Alien Codex           |    ✅    |
-| 20 | Denial                |    ✅    |
-| 21 | Shop                  |    ✅    |
-| 22 | Dex                   |    ✅    |
-| 23 | Dex Two               |    ✅    |
-| 24 | Puzzle Wallet         |    ✅    |
-| 25 | Motorbike             |    ❌    |
-| 26 | DoubleEntryPoint      |    ✅    |
-| 27 | Good Samaritan        |    ✅    |
-| 28 | Gatekeeper Three      |    ✅    |
-| 29 | Switch                |    ❌    |
-| 30 | Higher Order          |    ✅    |
-| 31 | Stake                 |    ✅    |
-| 32 | Impersonator          |    ✅    |
-| 33 | Magic Animal Carousel |    ❌    |
-| 34 | Bet House             |    ✅    |
-| 35 | Elliptic Token        |    ❌    |
+| #  |                            Challenge                                      |  Status  |
+|:--:|---------------------------------------------------------------------------|:--------:|
+| 00 | [Hello Ethernaut](src/challenge-00-hello-ethernaut/README.md)             |    ✅    |
+| 01 | [Fallback](src/challenge-01-fallback/README.md)                           |    ✅    |
+| 02 | [Fallout](src/challenge-02-fallout/README.md)                             |    ✅    |
+| 03 | [Coin Flip](src/challenge-03-coin-flip/README.md)                         |    ✅    |
+| 04 | [Telephone](src/challenge-04-telephone/README.md)                         |    ✅    |
+| 05 | [Token](src/challenge-05-token/README.md)                                 |    ✅    |
+| 06 | [Delegation](src/challenge-06-delegation/README.md)                       |    ✅    |
+| 07 | [Force](src/challenge-07-force/README.md)                                 |    ✅    |
+| 08 | [Vault](src/challenge-08-vault/README.md)                                 |    ✅    |
+| 09 | [King](src/challenge-09-king/README.md)                                   |    ✅    |
+| 10 | [Re-entrancy](src/challenge-10-re-entrancy/README.md)                     |    ✅    |
+| 11 | [Elevator](src/challenge-11-elevator/README.md)                           |    ✅    |
+| 12 | [Privacy](src/challenge-12-privacy/README.md)                             |    ✅    |
+| 13 | [Gatekeeper One](src/challenge-13-gatekeeper-one/README.md)               |    ✅    |
+| 14 | [Gatekeeper Two](src/challenge-14-gatekeeper-two/README.md)               |    ✅    |
+| 15 | [Naught Coin](src/challenge-15-naught-coin/README.md)                     |    ✅    |
+| 16 | [Preservation](src/challenge-16-preservation/README.md)                   |    ✅    |
+| 17 | [Recovery](src/challenge-17-recovery/README.md)                           |    ✅    |
+| 18 | [Magic Number](src/challenge-18-magic-number/README.md)                   |    ✅    |
+| 19 | [Alien Codex](src/challenge-19-alien-codex/README.md)                     |    ✅    |
+| 20 | [Denial](src/challenge-20-denial/README.md)                               |    ✅    |
+| 21 | [Shop](src/challenge-21-shop/README.md)                                   |    ✅    |
+| 22 | [Dex](src/challenge-22-dex/README.md)                                     |    ✅    |
+| 23 | [Dex Two](src/challenge-23-dex-two/README.md)                             |    ✅    |
+| 24 | [Puzzle Wallet](src/challenge-24-puzzle-wallet/README.md)                 |    ✅    |
+| 25 | [Motorbike](src/challenge-25-motorbike/README.md)                         |    ❌    |
+| 26 | [DoubleEntryPoint](src/challenge-26-double-entry-point/README.md)         |    ✅    |
+| 27 | [Good Samaritan](src/challenge-27-good-samaritan/README.md)               |    ✅    |
+| 28 | [Gatekeeper Three](src/challenge-28-gatekeeper-three/README.md)           |    ✅    |
+| 29 | [Switch](src/challenge-29-switch/README.md)                               |    ❌    |
+| 30 | [Higher Order](src/challenge-30-higher-order/README.md)                   |    ✅    |
+| 31 | [Stake](src/challenge-31-stake/README.md)                                 |    ✅    |
+| 32 | [Impersonator](src/challenge-32-impersonator/README.md)                   |    ✅    |
+| 33 | [Magic Animal Carousel](src/challenge-33-magic-animal-carousel/README.md) |    ❌    |
+| 34 | [Bet House](src/challenge-34-bet-house/README.md)                         |    ✅    |
+| 35 | [Elliptic Token](src/challenge-35-elliptic-token/README.md)               |    ❌    |
+| 35 | [Cashback](src/challenge-36-cashback/README.md)                           |    ✅    |
 
 ---
 
