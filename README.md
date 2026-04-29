@@ -134,7 +134,7 @@ These tests:
 | 30 | [Higher Order](src/challenge-30-higher-order/README.md)                   |    ✅    |
 | 31 | [Stake](src/challenge-31-stake/README.md)                                 |    ✅    |
 | 32 | [Impersonator](src/challenge-32-impersonator/README.md)                   |    ✅    |
-| 33 | [Magic Animal Carousel](src/challenge-33-magic-animal-carousel/README.md) |    ❌    |
+| 33 | [Magic Animal Carousel](src/challenge-33-magic-animal-carousel/README.md) |    ✅    |
 | 34 | [Bet House](src/challenge-34-bet-house/README.md)                         |    ✅    |
 | 35 | [Elliptic Token](src/challenge-35-elliptic-token/README.md)               |    ❌    |
 | 35 | [Cashback](src/challenge-36-cashback/README.md)                           |    ✅    |

