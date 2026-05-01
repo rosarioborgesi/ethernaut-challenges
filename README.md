@@ -139,6 +139,7 @@ These tests:
 | 35 | [Elliptic Token](src/challenge-35-elliptic-token/README.md)               |    ✅    |
 | 36 | [Cashback](src/challenge-36-cashback/README.md)                           |    ✅    |
 | 37 | [Impersonator Two](src/challenge-37-impersonator-two/README.md)           |    ✅    |
+| 38 | [Unique NFT](src/challenge-38-unique-nft/README.md)                       |    ✅    |
 
 ---
 
