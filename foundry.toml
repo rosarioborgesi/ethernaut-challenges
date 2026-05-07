@@ -5,7 +5,8 @@ libs = ["lib"]
 remappings = [
   "openzeppelin-contracts-08/=lib/openzeppelin-contracts-08/contracts/",
   "openzeppelin-contracts-06/=lib/openzeppelin-contracts-06/contracts/",
-  "openzeppelin-contracts-v5.4.0/=lib/openzeppelin-contracts-v5.4.0/contracts/"
+  "openzeppelin-contracts-v5.4.0/=lib/openzeppelin-contracts-v5.4.0/contracts/",
+  "openzeppelin-contracts-v4.6.0/=lib/openzeppelin-contracts-v4.6.0/contracts"
 ]
 [lint]
 exclude_lints = [
