@@ -295,7 +295,7 @@ So the challenge is solved by abusing the mismatch between:
 
 ## 🧪 Local proof of concept
 
-I first reproduced the exploit locally in the test file [`BetHouseTest.t.sol`](../../test/BetHouseTest.t.sol).
+I first reproduced the exploit locally in the test file [`BetHouseTest.t.sol`](../../test/challenge-34-bet-house/BetHouseTest.t.sol).
 
 The helper contract used in the exploit is [`BetHouseHelper`](./BetHouseHelper.sol):
 

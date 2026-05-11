@@ -140,6 +140,8 @@ These tests:
 | 36 | [Cashback](src/challenge-36-cashback/README.md)                           |    ✅    |
 | 37 | [Impersonator Two](src/challenge-37-impersonator-two/README.md)           |    ✅    |
 | 38 | [Unique NFT](src/challenge-38-unique-nft/README.md)                       |    ✅    |
+| 39 | [Forger](src/challenge-39-forger/README.md)                               |    ✅    |
+| 40 | [NotOptimisticPortal](src/challenge-40-not-optimistic-portal//README.md)  |    ❌    |
 
 ---
 

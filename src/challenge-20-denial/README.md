@@ -117,7 +117,7 @@ receive() external payable {
 
 ## 🧪 Local test (Foundry)
 
-We have created a test file [DenialTest.t.sol](../../test/DenialTest.t.sol) to simulate the exploit.
+We have created a test file [DenialTest.t.sol](../../test/challenge-20-denial/DenialTest.t.sol) to simulate the exploit.
 
 To simulate realistic conditions, we limit the gas:
 

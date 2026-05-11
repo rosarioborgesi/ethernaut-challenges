@@ -183,7 +183,7 @@ The attack combines:
 - crafted key (Gate 3)
 
 👉 Implementation: [GatekeeperOneAttacker.sol](GatekeeperOneAttacker.sol)  
-👉 Test: [GatekeeperOneTest.t.sol](../../test/GatekeeperOneTest.t.sol)
+👉 Test: [GatekeeperOneTest.t.sol](../../test/challenge-13-gatekeeper-one/GatekeeperOneTest.t.sol)
 
 ---
 

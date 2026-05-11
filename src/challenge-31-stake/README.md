@@ -99,7 +99,7 @@ We exploit the mismatch between:
 
 I reproduced the exploit locally:
 
-📄 [StakeTest.t.sol](../../test/StakeTest.t.sol)
+📄 [StakeTest.t.sol](../../test/challenge-31-stake/StakeTest.t.sol)
 
 ---
 

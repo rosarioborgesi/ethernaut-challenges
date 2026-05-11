@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {Dex, SwappableToken, IERC20} from "../src/challenge-22-dex/Dex.sol";
+import {Dex, SwappableToken, IERC20} from "src/challenge-22-dex/Dex.sol";
 
 contract DexTest is Test {
     Dex public dex;

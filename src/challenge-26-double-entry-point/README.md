@@ -114,7 +114,7 @@ So the bug is:
 
 ## 🧪 Step 1 — Prove the bug locally with a test
 
-To verify the behavior, I wrote the test [DoubleEntryPointTest.t.sol](../../test/DoubleEntryPointTest.t.sol)
+To verify the behavior, I wrote the test [DoubleEntryPointTest.t.sol](../../test/challenge-26-double-entry-point/DoubleEntryPointTest.t.sol)
 
 This test sets up:
 

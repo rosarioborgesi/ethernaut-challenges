@@ -210,11 +210,7 @@ This matches the expected setup:
 
 ## 🧪 Step 2 — Reproduce the bug locally
 
-Before exploiting the contract on Sepolia, I recreated the same situation locally in:
-
-```text
-test/TokenTest.sol
-```
+Before exploiting the contract on Sepolia, I recreated the same situation locally in [TokenTest.sol](../../test/challenge-5-token/TokenTest.t.sol).
 
 In that test, I reproduced the Ethernaut setup and documented how the underflow happens when an address with 20 tokens attempts to transfer 21.
 

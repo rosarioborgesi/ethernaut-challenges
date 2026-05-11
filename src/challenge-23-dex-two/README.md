@@ -85,7 +85,7 @@ swapAmount = (1 * 100) / 1 = 100
 
 ## 🧪 Local test
 
-This is implemented in [DexTwoTest.t.sol](../../test/DexTwoTest.t.sol)
+This is implemented in [DexTwoTest.t.sol](../../test/challenge-23-dex-two/DexTwoTest.t.sol)
 
 
 We deploy two fake tokens:

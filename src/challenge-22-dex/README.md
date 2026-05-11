@@ -213,7 +213,7 @@ More precisely:
 
 ## 🧪 Local test
 
-We have created a local test file [DexTest.t.sol](../../test/DexTest.t.sol) to simulate the exploit step by step.
+We have created a local test file [DexTest.t.sol](../../test/challenge-22-dex/DexTest.t.sol) to simulate the exploit step by step.
 
 ---
 

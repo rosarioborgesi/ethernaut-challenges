@@ -9,8 +9,8 @@ import {
     CryptoVault,
     Forta,
     IERC20
-} from "../src/challenge-26-double-entry-point/DoubleEntryPoint.sol";
-import {DetectionBot} from "../src/challenge-26-double-entry-point/DetectionBot.sol";
+} from "src/challenge-26-double-entry-point/DoubleEntryPoint.sol";
+import {DetectionBot} from "src/challenge-26-double-entry-point/DetectionBot.sol";
 
 contract DoubleEntryPointTest is Test {
     Forta forta;

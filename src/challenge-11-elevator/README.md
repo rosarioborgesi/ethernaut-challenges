@@ -116,11 +116,7 @@ So:
 
 ## 🧪 Step 3 — Local testing
 
-I tested the exploit locally in:
-
-```
-test/ElevatorTest.t.sol
-```
+I tested the exploit locally in [ElevatorTest.t.sol](../../test/challenge-11-elevator/ElevatorTest.t.sol).
 
 The test:
 

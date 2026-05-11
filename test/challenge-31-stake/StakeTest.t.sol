@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {Stake} from "../src/challenge-31-stake/Stake.sol";
-import {StakeEthHelper} from "../src/challenge-31-stake/StakeEthHelper.sol";
+import {Stake} from "src/challenge-31-stake/Stake.sol";
+import {StakeEthHelper} from "src/challenge-31-stake/StakeEthHelper.sol";
 import {ERC20Mock} from "openzeppelin-contracts-08/mocks/ERC20Mock.sol";
 
 contract StakeTest is Test {

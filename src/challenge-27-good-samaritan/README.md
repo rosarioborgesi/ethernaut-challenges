@@ -175,7 +175,7 @@ So the contract tricks `GoodSamaritan` into taking the “send everything left�
 
 ## 🧪 Local test
 
-I wrote the test [GoodSamaritanTest.t.sol](../../test/GoodSamaritanTest.t.sol)
+I wrote the test [GoodSamaritanTest.t.sol](../../test/challenge-27-good-samaritan/GoodSamaritanTest.t.sol)
 
 The test verifies that:
 

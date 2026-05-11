@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {PuzzleProxy, PuzzleWallet} from "../src/challenge-24-puzzle-wallet/PuzzleProxy.sol";
+import {PuzzleProxy, PuzzleWallet} from "src/challenge-24-puzzle-wallet/PuzzleProxy.sol";
 
 contract PuzzleProxyTest is Test {
     PuzzleProxy public proxy;

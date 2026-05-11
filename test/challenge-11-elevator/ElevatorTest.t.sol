@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import {Test} from "forge-std/Test.sol";
-import {Elevator} from "../src/challenge-11-elevator/Elevator.sol";
-import {ElevatorAttacker} from "../src/challenge-11-elevator/ElevatorAttacker.sol";
+import {Elevator} from "src/challenge-11-elevator/Elevator.sol";
+import {ElevatorAttacker} from "src/challenge-11-elevator/ElevatorAttacker.sol";
 
 contract ElevatorTest is Test {
     Elevator elevator;

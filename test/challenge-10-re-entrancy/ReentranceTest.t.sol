@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.12;
 
-import {DSTest} from "../lib/ds-test/src/test.sol";
-import {Reentrance} from "../src/challenge-10-re-entrancy/Reentrance.sol";
-import {ReentranceAttacker} from "../src/challenge-10-re-entrancy/ReentranceAttacker.sol";
+import {DSTest} from "lib/ds-test/src/test.sol";
+import {Reentrance} from "src/challenge-10-re-entrancy/Reentrance.sol";
+import {ReentranceAttacker} from "src/challenge-10-re-entrancy/ReentranceAttacker.sol";
 
 contract ReentranceTest is DSTest {
     Reentrance reentrance;

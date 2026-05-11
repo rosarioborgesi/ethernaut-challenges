@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {GatekeeperTwo} from "../src/challenge-14-gatekeeper-two/GatekeeperTwo.sol";
-import {GatekeeperTwoAttacker} from "../src/challenge-14-gatekeeper-two/GatekeeperTwoAttacker.sol";
+import {GatekeeperTwo} from "src/challenge-14-gatekeeper-two/GatekeeperTwo.sol";
+import {GatekeeperTwoAttacker} from "src/challenge-14-gatekeeper-two/GatekeeperTwoAttacker.sol";
 
 contract GatekeeperTwoTest is Test {
     GatekeeperTwo gatekeeper;

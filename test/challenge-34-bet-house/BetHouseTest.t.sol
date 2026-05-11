@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {BetHouse, Pool, PoolToken} from "../src/challenge-34-bet-house/BetHouse.sol";
-import {BetHouseHelper} from "../src/challenge-34-bet-house/BetHouseHelper.sol";
+import {BetHouse, Pool, PoolToken} from "src/challenge-34-bet-house/BetHouse.sol";
+import {BetHouseHelper} from "src/challenge-34-bet-house/BetHouseHelper.sol";
 
 contract BetHouseTest is Test {
     PoolToken public wrappedToken;

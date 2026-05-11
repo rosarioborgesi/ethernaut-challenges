@@ -116,7 +116,7 @@ bytes8 key =
 ## 🧪 Attacker contract
 
 👉 Implementation: [GatekeeperTwoAttacker.sol](GatekeeperTwoAttacker.sol)  
-👉 Test: [GatekeeperTwoTest.t.sol](../../test/GatekeeperTwoTest.t.sol)
+👉 Test: [GatekeeperTwoTest.t.sol](../../test/challenge-14-gatekeeper-two/GatekeeperTwoTest.t.sol)
 
 The attack:
 

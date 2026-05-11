@@ -3,8 +3,8 @@ pragma solidity >=0.8.0 <0.9.0;
 
 import "forge-std/Test.sol";
 
-import {GoodSamaritan, Wallet, Coin} from "../src/challenge-27-good-samaritan/GoodSamaritan.sol";
-import {Notifyable} from "../src/challenge-27-good-samaritan/Notifyable.sol";
+import {GoodSamaritan, Wallet, Coin} from "src/challenge-27-good-samaritan/GoodSamaritan.sol";
+import {Notifyable} from "src/challenge-27-good-samaritan/Notifyable.sol";
 
 contract GoodSamaritanTest is Test {
     GoodSamaritan goodSamaritan;

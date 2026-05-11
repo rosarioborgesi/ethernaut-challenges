@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {GatekeeperOne} from "../src/challenge-13-gatekeeper-one/GatekeeperOne.sol";
-import {GatekeeperOneAttacker} from "../src/challenge-13-gatekeeper-one/GatekeeperOneAttacker.sol";
+import {GatekeeperOne} from "src/challenge-13-gatekeeper-one/GatekeeperOne.sol";
+import {GatekeeperOneAttacker} from "src/challenge-13-gatekeeper-one/GatekeeperOneAttacker.sol";
 
 contract GatekeeperOneTest is Test {
     address constant MY_ADDRESS = 0xeCF94300dD67bB8c31F41BE3a2136D3f0abFb0B0;

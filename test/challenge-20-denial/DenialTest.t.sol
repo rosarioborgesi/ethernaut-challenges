@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {Denial} from "../src/challenge-20-denial/Denial.sol";
-import {DenialAttacker} from "../src/challenge-20-denial/DenialAttacker.sol";
+import {Denial} from "src/challenge-20-denial/Denial.sol";
+import {DenialAttacker} from "src/challenge-20-denial/DenialAttacker.sol";
 
 contract DenialTest is Test {
     Denial public denial;

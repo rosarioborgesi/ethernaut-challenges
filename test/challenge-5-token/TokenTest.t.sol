@@ -2,7 +2,7 @@
 pragma solidity ^0.6.0;
 
 import {DSTest} from "lib/ds-test/src/test.sol";
-import {Token} from "../src/challenge-05-token/Token.sol";
+import {Token} from "src/challenge-05-token/Token.sol";
 
 contract Attacker {
     function transferToken(Token token, address to, uint256 value) external {

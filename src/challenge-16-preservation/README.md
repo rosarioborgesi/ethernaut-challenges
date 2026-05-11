@@ -91,7 +91,7 @@ I have written the test `PreservationTest.t.sol` to test the exploit locally usi
 
 👉 Implementation: [PreservationAttacker.sol](PreservationAttacker.sol)
 
-👉 Test: [PreservationTest.t.sol](../../test/PreservationTest.t.sol)
+👉 Test: [PreservationTest.t.sol](../../test/challenge-16-preservation/PreservationTest.t.sol)
 
 
 ```solidity

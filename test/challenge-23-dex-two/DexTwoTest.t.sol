@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {DexTwo, SwappableTokenTwo, IERC20} from "../src/challenge-23-dex-two/DexTwo.sol";
-import {MyErc20} from "../src/challenge-23-dex-two/MyErc20.sol";
+import {DexTwo, SwappableTokenTwo, IERC20} from "src/challenge-23-dex-two/DexTwo.sol";
+import {MyErc20} from "src/challenge-23-dex-two/MyErc20.sol";
 
 contract DexTwoTest is Test {
     DexTwo public dex;

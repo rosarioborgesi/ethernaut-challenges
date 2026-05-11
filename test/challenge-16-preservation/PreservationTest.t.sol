@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 import {Test, console} from "forge-std/Test.sol";
-import {Preservation, LibraryContract} from "../src/challenge-16-preservation/Preservation.sol";
-import {PreservationAttacker} from "../src/challenge-16-preservation/PreservationAttacker.sol";
+import {Preservation, LibraryContract} from "src/challenge-16-preservation/Preservation.sol";
+import {PreservationAttacker} from "src/challenge-16-preservation/PreservationAttacker.sol";
 
 contract PreservationTest is Test {
     Preservation public preservation;

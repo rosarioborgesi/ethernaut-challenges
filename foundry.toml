@@ -20,7 +20,8 @@ exclude_lints = [
   "erc20-unchecked-transfer",
   "mixed-case-function",
   "asm-keccak256",
-  "unsafe-typecast"
+  "unsafe-typecast",
+  "pascal-case-struct"
 ]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

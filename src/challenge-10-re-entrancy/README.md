@@ -77,7 +77,7 @@ Result:
 
 ## 🧪 Step 2 - Local testing
 
-To better understand and validate the exploit, I wrote a test in: src/test/ReentranceTest.sol
+To better understand and validate the exploit, I wrote the test file [ReentranceTest.sol](../../test/challenge-10-re-entrancy/ReentranceTest.t.sol)
 
 
 The test simulates the full attack locally:

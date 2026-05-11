@@ -57,7 +57,7 @@ cast call $PUZZLE_PROXY_SEPOLIA \
 
 Before interacting with Sepolia, I reproduced the exploit locally:
 
-👉 [PuzzleProxyTest.t.sol](../../test/PuzzleProxyTest.t.sol)
+👉 [PuzzleProxyTest.t.sol](../../test/challenge-24-puzzle-wallet/PuzzleProxyTest.t.sol)
 
 This test simulates:
 

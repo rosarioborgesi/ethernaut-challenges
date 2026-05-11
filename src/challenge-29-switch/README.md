@@ -5,7 +5,7 @@ This level contains a bug when creating the instance on Ethernaut, discussed her
 https://github.com/OpenZeppelin/ethernaut/issues/837
 
 As a result, I was not able to create an instance of the contract on the platform.  
-I solved the challenge locally using the test file [SwitchTest.t.sol](../../test/SwitchTest.t.sol).
+I solved the challenge locally using the test file [SwitchTest.t.sol](../../test/challenge-29-switch/SwitchTest.t.sol).
 
 ---
 
